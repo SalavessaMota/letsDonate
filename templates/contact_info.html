@@ -1,11 +1,15 @@
 {% extends "layouts.html" %}
 
+{% block title %}
+    Contact Info
+{% endblock %}
+
 {% block content %}
     <div class="d-flex justify-content-center">
         <div id="page" class="mb-3 mt-5">
-            <h2>Informação de Contato</h2>
-            <p><strong>Nome do Usuário:</strong> {{ username }}</p>
-            <p><strong>Número de telefone:</strong> {{ contact }}</p>
+            <h2>Contact info:</h2>
+            <p><strong class="text-dark mr-5">Name:</strong>    {{ username1 }}</p>
+            <p><strong class="text-dark mr-5">Phone number:</strong>    {{ contact }}</p>
         </div>
-    </div>    
+    </div>
 {% endblock %}
