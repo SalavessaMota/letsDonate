@@ -2,6 +2,7 @@
 
 - [letsDonate](#letsdonate)
 - [About the Project](#about-the-project)
+- [Demo Video](#demo-video)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Screenshots](#screenshots)
@@ -23,7 +24,11 @@ Don’t waste, donate!
 
 letsDonate is a platform designed to give your unused items a second life by donating them to those in need. Before you decide to throw away items, consider the possibility of making a difference in someone's life by donating them through letsDonate.
 
-### Features
+## Demo Video
+
+Watch the letsDonate project demo video [here](https://www.youtube.com/watch?v=o347l4wsz5U).
+
+## Features
 
 - **User Registration:** Users can register by providing a username, contact, and password.
 - **Login/Logout:** Users can log in and out of their accounts.
@@ -42,7 +47,7 @@ letsDonate is a platform designed to give your unused items a second life by don
 ### Screenshots
 
 ![Home](Screenshots/home.jpg)
-![About Us](Screenshots/AboutUs.jpg)
+![About Us](Screenshots/AboutUS.jpg)
 ![View Available Items](Screenshots/ItemTable.jpg)
 ![View Contact Info](Screenshots/ContactInfo.jpg)
 ![Register](Screenshots/Register.jpg)
@@ -61,7 +66,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/SalavessaMota/letsDonate.git
+   git clone https://github.com/********/letsDonate.git
 
    pip install -r requirements.txt
 
@@ -89,5 +94,8 @@ Before making a pull request, please make sure your code follows the coding stan
 ## Contact
 
 Nuno Salavessa Mota - [My Linkedin](https://www.linkedin.com/in/nunosalavessamota/) - nunosalavessa@hotmail.com
+
+Project Link: [https://github.com/SalavessaMota/letsDonate](https://github.com/SalavessaMota/letsDonate)
+
 
 Project Link: [https://github.com/SalavessaMota/letsDonate](https://github.com/SalavessaMota/letsDonate)
