@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Delius&display=swap"/>
+        <title>CS50 Final Project Layout</title>
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        <section id="nav-bar">           
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid mr-0">
+                <a class="navbar-brand navbar-brand-link ml-1" href="/">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" style="color: #ffffff;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/aboutus">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/item_table">View current available items</a>
+                        </li>
+                        {% if session["user_id"] %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="/add_item">Donate an item</a>
+                            </li>
+                            <li class="nav-item">   
+                                <a class="nav-link" aria-current="page" href="/logout">Log Out</a>
+                            </li> 
+                        {% else %}
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/register">Register</a>
+                            </li>
+                            <li class="nav-item">   
+                                <a class="nav-link" aria-current="page" href="/login">Login</a>
+                            </li>     
+                        {% endif %}                           
+                    </ul>
+                </div>
+                </div>          
+            </nav>            
+        </section>               
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <footer class="text-center d-flex align-items-center justify-content-center mt-auto">
+            <p>Nuno Salavessa &copy; 2023.</p>
+        </footer>
+    </body>
+    <script src="static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</html>

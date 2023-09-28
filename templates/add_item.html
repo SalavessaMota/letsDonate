@@ -1,0 +1,20 @@
+{% extends "layouts.html" %}
+
+{% block content %}
+  <div id="page" class="d-flex flex-column justify-content-center align-items-center ml-3">
+      <h2 class="mb-3 mt-3">Add an item</h2>
+      <div>
+          <form action="/add_item" method="post" enctype="multipart/form-data">
+            <label>Item Name:</label>
+            <input type="text" name="item_name" required><br>
+            <label>Description:</label>
+            <input type="text" name="item_description" required><br>
+            <label for="item_location">Localidade:</label>
+            <input type="text" id="item_location" name="item_location" required><br>
+            <label>Image:</label>
+            <input type="file" name="file" required>
+            <input type="submit" value="Adicionar" class="contact-btn"><br>
+          </form>
+      </div>
+  </div>
+{% endblock %}

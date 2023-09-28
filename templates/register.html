@@ -1,0 +1,20 @@
+{% extends "layouts.html" %}
+
+{% block content %}
+<div id="page" class="d-flex justify-content-center ml-3">
+    <div>
+        <h2 class="mb-3 mt-3">Registro de Usuário</h2>
+        <form action="/register" method="post">
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="Username" required><br>
+            <label>Password:</label>
+            <input class="mx-1" type="password" id="pass" name="password" placeholder="Password"><br>
+            <label>Confirm password:</label>
+            <input class="mx-1" type="password" id="confirmation" name="confirmation" placeholder="Confirm password"><br>
+            <label>Phone number:</label>
+            <input class="mx-1" type="tel" id="contact" name="contact" placeholder="Phone number"><br>
+            <input type="submit" value="Registrar" class="contact-btn"><br>
+        </form>
+    </div>
+</div>
+{% endblock %}
