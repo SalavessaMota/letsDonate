@@ -42,7 +42,7 @@ letsDonate is a platform designed to give your unused items a second life by don
 ### Screenshots
 
 ![Home](Screenshots/home.jpg)
-![About Us](Screenshots/AboutUs.jog)
+![About Us](/letsDonate/Screenshots/AboutUs.jog)
 ![View Available Items](Screenshots/ItemTable.jpg)
 ![View Contact Info](Screenshots/ContactInfo.jpg)
 ![Register](Screenshots/Register.jpg)
